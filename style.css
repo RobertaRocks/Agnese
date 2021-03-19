@@ -20,6 +20,16 @@ background-color:var(--secondary-color);
 .navbar-brand {
 padding-left: 10px;}
 
+ul a:hover {
+color:var(--primary-color);
+text-decoration-line: underline ;
+text-decoration-color: var(--pink-color);
+text-decoration-style: solid;
+text-decoration-thickness: 3px;
+text-underline-offset:6px;
+}
+
+
 .main-container {
 padding-top:190px;
 padding-left:40px;
@@ -39,6 +49,72 @@ text-align: center;;
 background-image: url("Agnese.jpg");
 background-size:cover;
 background-repeat: no-repeat;
+}
+
+
+.about-me-box-1 {
+background-color: var(--secondary-color);
+padding: 20px;
+}
+.headline {
+font-family: var(--secondary-font);
+font-size: 20px;
+}
+.text-box-1 {
+padding: 40px;
+line-height: 50px;
+}
+
+.text-box-2 {
+padding: 40px;
+line-height: 50px;
+}
+
+.cv-box-1 {
+background-color: var(--pink-color);
+padding: 30px;
+
+}
+
+.cv-box-2 {
+background-color: var(--primary-color);
+padding: 30px;
+color:var(--secondary-color);
+}
+
+.cv-box-3 {
+background-color: var(--secondary-color);
+padding: 30px;
+}
+
+.cv-box-4 {
+background-color: white;
+padding: 30px;
+}
+
+.headline-cv {
+font-family: var(--secondary-font);
+font-size: 20px;
+
+}
+
+.align-right {
+text-align: right;
+padding-left: 50px;
+}
+
+.description-cv {
+font-family: var(--secondary-font);
+font-size: 15px;
+padding-left: 50px;
+}
+
+.profile-pic {
+max-height: 30%;
+min-width: 30%;
+padding: 20px;
+display: block;
+text-align: right;
 }
 
 .button-container {
@@ -97,99 +173,6 @@ border:1px solid #3230314f;
 
 
 
-@media (max-width: 700px) {
-
-.main-container {
-padding-top:120px;
-padding-left:40px;
-}
-
-h1 {
-font-size: 40px;
-line-height:45px;
-text-align: left;
-}
-
-button {
-display: block;
-text-align: left;
-}
-
-.button-center, .button-container-center {
-display:block;
-text-align:center;
-}
-
-.align-right {
-text-align: left !important;
-}
-
-
-}
-
-.about-me-box-1 {
-background-color: var(--secondary-color);
-padding: 20px;
-}
-.headline {
-font-family: var(--secondary-font);
-font-size: 20px;
-}
-.text-box-1 {
-padding: 40px;
-line-height: 50px;
-}
-
-.text-box-2 {
-padding: 40px;
-line-height: 50px;
-}
-
-.cv-box-1 {
-background-color: var(--pink-color);
-padding: 20px;
-
-}
-
-.cv-box-2 {
-background-color: var(--primary-color);
-padding: 20px;
-color:var(--secondary-color);
-}
-
-.cv-box-3 {
-background-color: var(--secondary-color);
-padding: 20px;
-}
-
-.cv-box-4 {
-background-color: white;
-padding: 20px;
-}
-
-.headline-cv {
-font-family: var(--secondary-font);
-font-size: 20px;
-
-}
-
-.align-right {
-text-align: right;
-}
-
-.description-cv {
-font-family: var(--secondary-font);
-font-size: 15px;
-}
-
-.profile-pic {
-max-height: 30%;
-min-width: 30%;
-padding: 20px;
-display: block;
-text-align: right;
-}
-
 .social-icon, .email-link {
 color:#323031;
 text-decoration: none;
@@ -209,7 +192,7 @@ margin:95px;
 
 .heart {
 font-weight: bolder;
-color: #d9ad9c;
+color:var(--pink-color);
 font-size:20px;
 }
 
@@ -236,6 +219,43 @@ color:#d9ad9c;
 
 }
 
+ /* MOBILE & TABLET */ 
+
+@media (max-width: 900px) {
+
+.main-container {
+padding-top:120px;
+padding-left:40px;
+}
+
+h1 {
+font-size: 40px;
+line-height:45px;
+text-align: left;
+}
+
+button {
+display: block;
+text-align: left;
+}
+
+.button-center, .button-container-center {
+display:block;
+text-align:center;
+}
+
+.align-right {
+text-align: left !important;
+}
+
+.wrapped-agnese{
+background-color: var(--secondary-color);
+
+}
+}
+ 
+
+ /* END MOBILE & TABLET */ 
 
 section{
   background-color: #d9ad9c;
@@ -274,22 +294,26 @@ section{
   }}
 
 
-
+.wrapped-agnese{
+background-color: var(--secondary-color);
+text-align: center;
+justify-content: center;
+}
 .rose {
 color: var(--pink-color);
 background-color: var(--secondary-color);
-font-size: 12px;
+
 }
 
 
-                     #warped {position: relative; display: block; width:588px; height:440px;}
+                     #warped {position: relative; display: block; width:-10px; height:260px;}
 
-                     #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+                     #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute; margin-left:-90px;
                      -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
                      100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
 
-                     #warped span{font-family:'ABeeZee';font-size:38px;font-weight:regular;font-style:normal;
-                     line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+                     #warped span{font-family:var(--secondary-font);font-size:20px;font-weight: bold;
+                     line-height:5.65; white-space:pre; overflow:visible; padding:0px;}
 
                      #warped .w0 {-moz-transform: rotate(-1.56rad);-webkit-transform: rotate(-1.56rad);-o-transform:
                      rotate(-1.56rad);-ms-transform: rotate(-1.56rad); transform: rotate(-1.56rad);
@@ -431,15 +455,43 @@ font-size: 12px;
                      rotate(3.71rad);-ms-transform: rotate(3.71rad); transform: rotate(3.71rad);
                      width: 13px; height: 24px; left: 218.9px; top: 301.69px;}
 
-                     #warped .w35 {-moz-transform: rotate(3.84rad);-webkit-transform: rotate(3.84rad);-o-transform:
-                     rotate(3.84rad);-ms-transform: rotate(3.84rad); transform: rotate(3.84rad);
-                     width: 10px; height: 24px; left: 207.19px; top: 291.83px;}
+                     
+.sidetext-left{
 
-                     #warped .w36 {-moz-transform: rotate(3.96rad);-webkit-transform: rotate(3.96rad);-o-transform:
-                     rotate(3.96rad);-ms-transform: rotate(3.96rad); transform: rotate(3.96rad);
-                     width: 10px; height: 24px; left: 196.39px; top: 281.43px;}
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    color: var(--pink-color);
+    height: 1.5em;
+    margin: -25px;
+    transform: rotate(
+-90deg
+);
+    font-family: var(--primary-font);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px !important;
 
+}
               
+.sidetext-right {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    height: 1.5em;
+    color: var(--pink-color);
+    margin: -25px;
+    transform: rotate(
+90deg
+);
+    font-family: var(--primary-font);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2.3px !important;
+}
        
            
-    
+
+
+        
+           
